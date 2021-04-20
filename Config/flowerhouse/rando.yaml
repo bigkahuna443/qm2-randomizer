@@ -1,0 +1,61 @@
+Backgrounds:
+# Opaque
+- Texture: bgs/flowerhouse/QM2/RolltheBones
+  Opaque: true
+  ScrollFactorX: 0.8
+  ScrollFactorY: 0.7
+  LoopY: true
+# Non-Opaque
+- Texture: "bgs/flowerhouse/QM2/SMW_CloudFriendsTall"
+  OffX: 100
+  ScrollFactorX: 1.0
+  ScrollFactorY: 0.7
+  SpeedX: -5
+  Alpha: 0.7
+  LoopY: true
+- Texture: "bgs/flowerhouse/QM2/SMW_CloudFriends"
+  ScrollFactorX: 0.05
+  ScrollFactorY: 0.0
+  SpeedX: -9
+  Alpha: 0.6
+  LoopY: true
+
+Campaigns:
+- Name: "Quickie Mountain 2"
+  LevelSets:
+  - Name: "Quickie Mountain 2"
+    ID: "flowerhouse/QM2"
+  
+Music:
+# A few of these disabled because of music progress issues
+- Name: "event:/flowerhouse/MadelineStart"
+- Name: "event:/flowerhouse/TerminalVelocity"
+# - Name: "event:/flowerhouse/ECCClocktower"
+- Name: "event:/flowerhouse/Ducktales1"
+- Name: "event:/flowerhouse/GlitchCatLake"
+- Name: "event:/flowerhouse/YoshisLair"
+- Name: "event:/flowerhouse/Inferno"
+- Name: "event:/flowerhouse/TheosZoo"
+- Name: "event:/flowerhouse/JurassicJungle"
+- Name: "event:/flowerhouse/SeekerCity"
+- Name: "event:/flowerhouse/TakeFive"
+- Name: "event:/flowerhouse/ElusiveNumbers"
+- Name: "event:/flowerhouse/RolltheBones"
+- Name: "event:/flowerhouse/BadelineCastle_Chase"
+# - Name: "event:/flowerhouse/BadelineCastle_Fight"
+# - Name: "event:/flowerhouse/VsSusie"
+- Name: "event:/flowerhouse/WhiteMothLair"
+- Name: "event:/flowerhouse/Credits"
+
+Rulesets:
+- Name: "SCA"
+  LongName: "Normal Pathway [Quickie Mountain 2] (A)"
+  Algorithm: "Pathway"
+  Darkness: "Never"
+  EnabledMaps:
+  - SID: "flowerhouse/QM2/1_TerminalVelocity"
+    Mode: 0 # A-side
+  - SID: "flowerhouse/QM2/1_TerminalVelocity"
+    Mode: 1 # B-side
+  - SID: "flowerhouse/QM2/1_TerminalVelocity"
+    Mode: 2 # C-side

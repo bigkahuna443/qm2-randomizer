@@ -1,0 +1,442 @@
+# Freezeflame Isle
+
+ASide:
+  - Room: "1a"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+      ReqIn:
+        Dashes: two
+        Difficulty: master
+    Tweaks:
+    - Name: "spawn"
+      X: 1440
+      Y: 120
+      Update:
+        X: 1280
+        Y: 128
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 1272
+        Y: 64
+        Width: 24
+        Height: 64
+        Values:
+          cameraX: -1.0
+    - Name: "cameraTargetTrigger"
+      Update:
+        Add: true
+        X: 1248
+        Y: 64
+        Width: 176
+        Height: 64
+        Nodes:
+        - Idx: 0
+          X: 1384
+          Y: 88
+        Values:
+          lerpStrength: 1.0
+    - Name: "changeRespawnTrigger"
+      Update:
+        Remove: true
+      
+  - Room: "2a"
+    ReqEnd:
+      Dashes: one
+      Difficulty: hard
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    Tweaks:
+    - Name: "dashBlock" # remove all secret exits + indicators
+      ID: 5
+      Update:
+        Values:
+          canDash: false
+    - Name: "torch"
+      ID: 146
+      Update:
+        Remove: true
+    - Name: "torch"
+      ID: 618
+      Update:
+        Remove: true
+    - Name: "exitBlock"
+      Update:
+        Add: true
+        X: 1592
+        Y: -8
+        Width: 64
+        Height: 24
+        Values:
+          tiletype: "3" # Snow
+        
+  - Room: "2a_cas"
+    ReqEnd:
+      Or:
+      - Dashes: one
+        Difficulty: expert
+      - Dashes: two
+        Difficulty: hard
+    Holes:
+    - Side: Down
+      Idx: 1
+      Kind: in
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - Name: "cassette"
+      Update:
+        Remove: true
+    - Name: "blackGem"
+      Update:
+        Add: true
+        X: 552
+        Y: 96
+    - Name: "exitBlock" # remove alt exit
+      Update:
+        Add: true
+        X: 1664
+        Y: 0
+        Width: 40
+        Height: 96
+        Values:
+          tiletype: "e" # Temple B
+      
+  - Room: "Cats"
+    Collectables:
+    - Idx: 0
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+      
+      
+BSide:
+  - Room: "0b"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      
+  - Room: "1b"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Tweaks:
+    - Name: "invisibleBarrier"
+      Update:
+        Remove: true
+    - Name: "changeRespawnTrigger"
+      Update:
+        Remove: true
+    - Name: "dreamBlock"
+      ID: 8
+      Update:
+        Remove: true
+        
+  - Room: "1b_rando"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    InternalEdges:
+    - Split: RightToLeft
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
+    Tweaks:
+    - Name: "invisibleBarrier"
+      Update:
+        Remove: true
+    - Name: "changeRespawnTrigger"
+      Update:
+        Remove: true
+    - Name: "spawn"
+      X: 2472
+      Y: 264
+      Update:
+        Default: true
+      
+  - Room: "2b"
+    Holes:
+    - Side: Left
+      Idx: 1
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    InternalEdges:
+    - To: "berry"
+      ReqBoth:
+        Dashes: one
+        Difficulty: hard
+    Subrooms:
+    - Room: "berry"
+      Holes:
+      - Side: Left
+        Idx: 0
+        Kind: inout
+      InternalEdges:
+      - To: "exit"
+        ReqOut:
+          Dashes: one
+          Difficulty: hard
+    - Room: "exit"
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: out
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 16
+        Y: 856
+    - Name: "dreamBlock"
+      ID: 172
+      Update:
+        Remove: true
+    - Name: "invisibleBarrier"
+      Update:
+        Remove: true
+      
+      
+CSide:
+  - Room: "1c"
+    ReqEnd:
+      Dashes: one
+      Difficulty: hard
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    - Side: Down
+      Idx: 7
+      Kind: none
