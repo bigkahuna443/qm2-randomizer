@@ -41,48 +41,48 @@ ASide:
       Update:
         Remove: true
         
-  - Room: "1a_rando"
-    Hub: true
-    Holes:
-    - Side: Right
-      Idx: 0
-      Kind: inout
-    # blocked
-    - Side: Left
-      Idx: 0
-      Kind: none
-    - Side: Up
-      Idx: 0
-      Kind: none
-    - Side: Up
-      Idx: 1
-      Kind: none
-    - Side: Down
-      Idx: 2
-      Kind: none
-    InternalEdges:
-    - To: "exit"
-      ReqOut:
-        Dashes: two
-        Difficulty: perfect
-    Subrooms:
-    - Room: "exit"
-      Holes:
-      - Side: Left
-        Idx: 1
-        Kind: inout
-      - Side: Down
-        Idx: 0
-        Kind: unknown
-      - Side: Down
-        Idx: 1
-        Kind: inout
-    Tweaks:
-    - Name: "spawn"
-      X: 1000
-      Y: 96
-      Update:
-        Default: true
+  # - Room: "1a_rando"
+    # Hub: true
+    # Holes:
+    # - Side: Right
+      # Idx: 0
+      # Kind: inout
+    # # blocked
+    # - Side: Left
+      # Idx: 0
+      # Kind: none
+    # - Side: Up
+      # Idx: 0
+      # Kind: none
+    # - Side: Up
+      # Idx: 1
+      # Kind: none
+    # - Side: Down
+      # Idx: 2
+      # Kind: none
+    # InternalEdges:
+    # - To: "exit"
+      # ReqOut:
+        # Dashes: two
+        # Difficulty: perfect
+    # Subrooms:
+    # - Room: "exit"
+      # Holes:
+      # - Side: Left
+        # Idx: 1
+        # Kind: inout
+      # - Side: Down
+        # Idx: 0
+        # Kind: unknown
+      # - Side: Down
+        # Idx: 1
+        # Kind: inout
+    # Tweaks:
+    # - Name: "spawn"
+      # X: 1000
+      # Y: 96
+      # Update:
+        # Default: true
       
   - Room: "1a_cas"
     ReqEnd:
