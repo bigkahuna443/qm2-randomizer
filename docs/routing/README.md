@@ -1,6 +1,6 @@
 Routing
 =======
-This table contains the routing information for every map in Quickie Mountaini 2. There are also comments for some levels that have trickier solutions, or explanations on rating choices, cut routes, etc. If you would like to contribute to labbing or make suggestions, read the info below and then contact me with your findings (contact info [here](../../README.md#contact))!
+This page contains the routing information for every map in Quickie Mountain 2. There are also comments for some levels that have trickier solutions, or explanations on rating choices, cut routes, etc. If you would like to contribute to labbing or make suggestions, read the info below and then contact me with your findings (contact info [here](../../README.md#contact))!
 
 
 Notation
@@ -27,6 +27,9 @@ Some screens are technically possible to complete in reverse, but were not inclu
 3. Rooms with a Theo gate at the end are not possible in reverse.
 4. Exits with a non-persistent dash block at the end (i.e. reappears after retry) are not possible in reverse.
 
+
+Routing Table
+--------------
 
 | Map | Room | 0DF | 1DF | 2DF | 0DR | 1DR | 2DR | Comments |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
