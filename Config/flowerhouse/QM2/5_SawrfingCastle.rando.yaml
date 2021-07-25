@@ -134,9 +134,6 @@ BSide:
     - Side: Right
       Idx: 0
       Kind: none
-    - Side: Right
-      Idx: 1
-      Kind: none
     - Side: Down
       Idx: 0
       Kind: none

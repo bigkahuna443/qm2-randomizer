@@ -29,11 +29,19 @@ Campaigns:
 Music:
 # A few of these disabled because of music progress issues
 - Name: "event:/flowerhouse/MadelineStart"
+  Weight: 0.5
 - Name: "event:/flowerhouse/TerminalVelocity"
-# - Name: "event:/flowerhouse/ECCClocktower"
-- Name: "event:/flowerhouse/Ducktales1"
+- Name: "event:/flowerhouse/ECC1_Randomizer"
+  Weight: 0.25
+- Name: "event:/flowerhouse/ECC2_Randomizer"
+  Weight: 0.25
+- Name: "event:/flowerhouse/ECC3_Randomizer"
+  Weight: 0.25
+- Name: "event:/flowerhouse/ECC4_Randomizer"
+  Weight: 0.25
+- Name: "event:/flowerhouse/Ducktales_Randomizer"
 - Name: "event:/flowerhouse/GlitchCatLake"
-- Name: "event:/flowerhouse/YoshisLair"
+- Name: "event:/flowerhouse/YoshisLair_Randomizer"
 - Name: "event:/flowerhouse/Inferno"
 - Name: "event:/flowerhouse/TheosZoo"
 - Name: "event:/flowerhouse/JurassicJungle"
@@ -42,20 +50,7 @@ Music:
 - Name: "event:/flowerhouse/ElusiveNumbers"
 - Name: "event:/flowerhouse/RolltheBones"
 - Name: "event:/flowerhouse/BadelineCastle_Chase"
-# - Name: "event:/flowerhouse/BadelineCastle_Fight"
-# - Name: "event:/flowerhouse/VsSusie"
+- Name: "event:/flowerhouse/BadelineCastle_Fight_Randomizer"
+- Name: "event:/flowerhouse/VsSusie_Randomizer"
 - Name: "event:/flowerhouse/WhiteMothLair"
 - Name: "event:/flowerhouse/Credits"
-
-Rulesets:
-- Name: "SCA"
-  LongName: "Normal Pathway [Quickie Mountain 2] (A)"
-  Algorithm: "Pathway"
-  Darkness: "Never"
-  EnabledMaps:
-  - SID: "flowerhouse/QM2/1_TerminalVelocity"
-    Mode: 0 # A-side
-  - SID: "flowerhouse/QM2/1_TerminalVelocity"
-    Mode: 1 # B-side
-  - SID: "flowerhouse/QM2/1_TerminalVelocity"
-    Mode: 2 # C-side

@@ -167,25 +167,6 @@ BSide:
       - Side: Left
         Idx: 1
         Kind: out
-    Tweaks:
-    - Name: "cameraOffsetTrigger"
-      Update:
-        Add: true
-        X: 296
-        Y: 160
-        Width: 24
-        Height: 32
-        Values:
-          cameraY: 1.0
-    - Name: "cameraOffsetTrigger"
-      Update:
-        Add: true
-        X: 200
-        Y: 496
-        Width: 80
-        Height: 56
-        Values:
-          cameraY: -2.0
       
   - Room: "2b"
     ReqEnd:
