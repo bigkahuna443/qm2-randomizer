@@ -305,7 +305,7 @@ CSide:
       Idx: 2
       Kind: none
     Tweaks:
-    - Name: "invisibleBarrier"
+    - Name: "exitBlock"
       Update:
         Remove: true
       

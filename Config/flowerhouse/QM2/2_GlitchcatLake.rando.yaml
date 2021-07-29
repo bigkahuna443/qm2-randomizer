@@ -272,7 +272,7 @@ BSide:
         Dashes: one
         Difficulty: hard
     Tweaks:
-    - Name: "invisibleBarrier"
+    - Name: "exitBlock"
       Update:
         Remove: true
     - Name: "changeRespawnTrigger"
@@ -332,7 +332,7 @@ BSide:
     Holes:
     - Side: Left
       Idx: 1
-      Kind: inout
+      Kind: in
     # blocked
     - Side: Down
       Idx: 0
@@ -367,13 +367,6 @@ BSide:
         Add: true
         X: 16
         Y: 856
-    - Name: "dreamBlock"
-      ID: 172
-      Update:
-        Remove: true
-    - Name: "invisibleBarrier"
-      Update:
-        Remove: true
       
       
 CSide:
